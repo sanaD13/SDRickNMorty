@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollectionCell" customModule="SDRickNMorty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-co-riF">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-bZ-HKY" customClass="GradientView" customModule="SDRickNMorty" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name of episode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4S-aW-BoT">
+                            <rect key="frame" x="2" y="125" width="146" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="HSK-eP-iGn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="R4S-aW-BoT" secondAttribute="trailing" constant="2" id="FJj-hf-IdA"/>
+                        <constraint firstItem="R4S-aW-BoT" firstAttribute="leading" secondItem="jLV-bZ-HKY" secondAttribute="leading" constant="2" id="To7-8i-hqT"/>
+                        <constraint firstAttribute="bottom" secondItem="R4S-aW-BoT" secondAttribute="bottom" id="kIH-Ld-aVy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tVd-co-riF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1E6-k9-ZLX"/>
+                <constraint firstItem="tVd-co-riF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Agc-Qi-pD4"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="leading" secondItem="tVd-co-riF" secondAttribute="leading" id="GZ3-CA-9X1"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Gvp-S2-0mu"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JNp-z5-DFI"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="trailing" secondItem="tVd-co-riF" secondAttribute="trailing" id="Sqm-e8-oaf"/>
+                <constraint firstItem="tVd-co-riF" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Z6m-O5-P4F"/>
+                <constraint firstItem="tVd-co-riF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cRz-FP-N3b"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fLv-Qv-HlL"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mwm-Cw-jed"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="top" secondItem="tVd-co-riF" secondAttribute="top" id="r4E-Bv-jpc"/>
+                <constraint firstItem="jLV-bZ-HKY" firstAttribute="bottom" secondItem="tVd-co-riF" secondAttribute="bottom" id="zBo-PQ-UAs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cellImage" destination="tVd-co-riF" id="5hU-94-mfp"/>
+                <outlet property="cellTitle" destination="R4S-aW-BoT" id="yhj-3i-j7H"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="33.147321428571431"/>
+        </view>
+    </objects>
+</document>
